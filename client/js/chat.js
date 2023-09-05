@@ -80,7 +80,6 @@ const ask_gpt = async (message) => {
             <div class="message">
                 <div class="user">
                     ${user_image}
-                    <i class="fa-regular fa-phone-arrow-up-right"></i>
                 </div>
                 <div class="content" id="user_${token}"> 
                     ${format(message)}
@@ -98,7 +97,7 @@ const ask_gpt = async (message) => {
     message_box.innerHTML += `
             <div class="message">
                 <div class="user">
-                    ${gpt_image} <i class="fa-regular fa-phone-arrow-down-left"></i>
+                    ${gpt_image}
                 </div>
                 <div class="content" id="gpt_${window.token}">
                     <div id="cursor"></div>
